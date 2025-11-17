@@ -71,12 +71,12 @@ spec:
     spec:
       containers:
         - name: backend
-          image: priyankasml/2300032709-lab-backend:latest
+          image: priyankasml/2300032709-lab1-backend:latest
           ports:
             - containerPort: 2000
           env:
             - name: SPRING_DATASOURCE_URL
-              value: jdbc:mysql://mysql-service:3306/projectdb
+              value: jdbc:mysql://mysql-service:3306/examdb
             - name: SPRING_DATASOURCE_USERNAME
               value: root
             - name: SPRING_DATASOURCE_PASSWORD
@@ -116,7 +116,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: priyankasml/2300032709-lab-frontend:latest
+          image: priyankasml/2300032709-lab1-frontend:latest
           ports:
             - containerPort: 80
           
